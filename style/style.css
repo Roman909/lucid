@@ -74,3 +74,31 @@ body {
     background-size: cover;
     background-position: center center;
 }
+
+.section-main_heading {
+    margin-top: 42px;
+    margin-bottom: 60px;
+}   
+
+.section-main_heading h5 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #008ed6;
+    text-transform: uppercase;
+    margin-bottom: 23px;
+}
+
+.section-main_heading h1 {
+    font-size: 48px;
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 28px;
+}
+
+.section-main_heading-description {
+    color: #999;
+}
+
+.section-main_image {
+    text-align: center;
+}
