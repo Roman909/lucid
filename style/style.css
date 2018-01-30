@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:700|Source+Sans+Pro:300,300i,400,400i,600,700');
+
+body {
+    overflow-x: hidden;
+    min-width: 320px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    padding-top: 41px;
+}
+
+.header-nav {
+    font-size: 0;
+    text-align: right;
+}
+
+.header-nav_list {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.header-nav_list:not(:last-child) {
+    margin-right: 22px;
+}
+
+.header-nav_list-link {
+    color: #fffefe;
+    text-decoration: none;
+    position: relative;
+}
+
+.header-nav_list-link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    width: 0;
+    height: 2px;
+    background: #008ed6;
+    transition: width .3s ease-in-out;       
+}
+
+.header-nav_list-link::before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 22px;
+    bottom: -10px;
+    width: 0;
+    height: 2px;
+    background: #008ed6;
+    transition: width .3s ease-in-out; 
+}
+
+.header-nav_list-link:hover::before, .header-nav_list-link:hover::after {
+    width: 20px;
+}
+
+/*.section {}*/
+
+.section-main {
+    padding-top: 121px;
+    width: 100%;
+    background-color: #000;
+    background-size: cover;
+    background-position: center center;
+}
